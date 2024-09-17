@@ -18,7 +18,7 @@ with open("input.txt", "r") as file:
         num = int(move.split()[1])
         loc = int(move.split()[3])-1
         dest = int(move.split()[5])-1
-        realcolumns[dest] += realcolumns[loc][-num:]
+        realcolumns[dest] += reversed(realcolumns[loc][-num:])
         realcolumns[loc] = realcolumns[loc][:-num]
         print(realcolumns)
         # print(num,loc,dest)
