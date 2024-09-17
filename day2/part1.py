@@ -18,29 +18,29 @@ def split_list(input_list):
 def getScore(A, B):
     score = 0
     if A == "X":
-        score += 0
+        score += 1
         if B == 'A':
             score += 3
         elif B == "B":
-            score += 1
+            score += 0
         elif B == "C":
-            score += 2
+            score += 6
     elif A == "Y":
+        score += 2
+        if B == "A":
+            score += 6
+        elif B == "B":
+            score += 3
+        elif B == "C":
+            score += 0
+    elif A == "Z":
         score += 3
         if B == "A":
-            score += 1
+            score += 0
         elif B == "B":
-            score += 2
+            score += 6
         elif B == "C":
             score += 3
-    elif A == "Z":
-        score += 6
-        if B == "A":
-            score += 2
-        elif B == "B":
-            score += 3
-        elif B == "C":
-            score += 1
 
     return score
 
