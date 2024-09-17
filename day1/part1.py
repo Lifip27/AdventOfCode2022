@@ -23,4 +23,4 @@ with open("input.txt", "r") as f:
     for i in elfs:
         top.append(sum(i))
     top.sort()
-    print(sum(top[-3:]))
+    print(sum(top[-1:]))
